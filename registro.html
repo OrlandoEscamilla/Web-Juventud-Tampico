@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false" >
+<head>
+	<meta charset="utf-8">
+	<title>Premio Municipal De La Juventud</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/fuentes.css">
+	<link rel="icon" type="image/png" href="img/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="barray" oncontextmenu="return false" >
+<div class="menu_responsive">
+	<div class="contenedor_encales_menu">
+		<a style="text-decoration: none;" href="index"><p>inicio</p></a>
+		<a style="text-decoration: none;" href="convocatoria"><p>Convocatoria</p></a>
+		<a style="text-decoration: none;" href="registro"><p>Registro</p></a>
+		<a style="text-decoration: none;" href="https://www.facebook.com/dajtampico/"><p>Facebook</p></a>
+	</div>
+	<div class="contenedor_footerindex">
+	<div class="footerindex">
+		<img src="img/Logo_Tampico.png">
+	</div>
+</div>
+</div>
+
+<header>
+<div class="banner">
+		<nav>
+			<ul>
+					<li>
+						<a href="index">inicio</a>
+					</li>
+					<li>
+						<a href="convocatoria">convocatoria</a>
+					</li>
+					<li>
+						<a href="registro">registro</a>
+					</li>
+					<li style="margin-top: 20px;">
+						<a style="all: initial; position: relative; top: 5px; left: 3px" href="https://www.facebook.com/dajtampico/" target="_blank"><img style="width: 20px;" src="img/facebook.png"></a>
+					</li>
+			</ul>
+		</nav>
+		<div class="boton_menu">
+			<img src="img/boton_menu.png">
+		</div>
+</div>	
+</header>
+
+<div class="contenedor_registro">
+	<div class="contenedor_logo_registro" >
+		<img src="img/Logo.gif">
+	</div>
+	<div class="contenedor_tabs_r">
+			<p style="color: #fff;">Elige tu opción:</p>
+	</div>
+	<div class="contenedor_botonformularios">
+
+	<ul class="botones">
+		<li id="opcion1"><img id="img1" src="img/individual_rosa.png">
+		<p class="descripcion1">Candidato</p>
+		<p class="descripcion2">individual</p>
+		</li>
+		<li id="opcion2"><img id="img2" src="img/grupal_blanco.png">
+			<p class="descripcion1">Candidato</p>
+		<p class="descripcion2">grupal</p>
+		</li>
+	</ul>
+
+	<div class="contenedor_formulario1">
+	<form id="contactform" method="post" enctype="multipart/form-data">
+		<div class="conformizq">
+		<p style="font-family:fuentegeoteconegrita; font-size:35px; color: #fff; float: left;">Ingresa tus datos:</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+			<label  style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Nombre completo</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="text" name="nombre" required>
+			<br>
+			<br>
+
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Teléfono</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="tel" name="telefono" required>
+			<br>
+			<br>
+
+			<label style=" float:left; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">CURP</label>
+				<a href="https://consultas.curp.gob.mx/CurpSP/inicio2_2.jsp"><label style=" cursor: pointer; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px; float: right;">Consiguelo aqui</label></a>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="text" name="curp" required>
+			<br>
+			<br>
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Categoría de premiación</label>
+			<select id="lista" style="width:100%; border-radius: 10px; border:none; height: 20px;" name="categoria" required>
+				  <option value="" disabled selected>Selecciona una categoría</option>
+				  <option value="Logro académico">Logro académico</option>
+				  <option value="Ingenio emprendedor">Ingenio emprendedor</option>
+				  <option value="Expresiones artísticas y artes populares">Expresiones artísticas y artes populares</option>
+				  <option value="Mérito Civico">Mérito Civico</option>
+				  <option value="Compromiso social">Compromiso social</option>
+				  <option value="Protección al ambiente">Protección al ambiente</option>
+				  <option value="Superación e integración">Superación e integración</option>
+				  <option value="Derechos humanos">Derechos humanos</option>
+				  
+			</select>
+		</div>
+
+		<div class="conformder">
+		<br>
+		<br>
+		<br>
+		<br>
+			<label id="up" style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Dirección</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="text" name="direccion" required>
+			<br>
+			<br>
+
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom:5px;">E-mail</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="email" name="correo" required>
+			<br>
+			<br>
+
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Curriculum Vitae</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="file" name="cv" required>
+			<br>
+			<br>
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">¿Por qué te consideras merecedor del Premio?</label>
+			<textarea style="width: 100%; height: 100px; border:none; border-radius: 13px;" required name="comentario">
+				
+			</textarea>
+			<br>
+			<input id="botonform1" type="submit" name="" value="ENVIAR">
+			</div>
+	</form>
+	
+	
+	</div>
+
+
+
+
+
+	<div class="contenedor_formulario2">
+			<form id="contactform2" method="post" enctype="multipart/form-data">
+		<div class="conformizq">
+		<p style="font-family:fuentegeoteconegrita; font-size:35px; color: #fff; float: left;">Ingresa tus datos:</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Nombre completo del representante de grupo</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="text" name="nombre" required>
+			<br>
+			<br>
+
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Teléfono del representante de grupo</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="tel" name="telefono" required>
+			<br>
+			<br>
+
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Curriculum Vitae del grupo</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="file" name="cv" required>
+			<br>
+			<br>
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Categoría de premiación</label>
+			<select id="lista" style="width:100%; border-radius: 10px; border:none; height: 20px;" name="categoria" required>
+				  <option value="" disabled selected>Selecciona una categoría</option>
+				  <option value="Logro académico">Logro académico</option>
+				  <option value="Ingenio emprendedor">Ingenio emprendedor</option>
+				  <option value="Expresiones artísticas y artes populares">Expresiones artísticas y artes populares</option>
+				  <option value="Mérito Civico">Mérito Civico</option>
+				  <option value="Compromiso social">Compromiso social</option>
+				  <option value="Protección al ambiente">Protección al ambiente</option>
+				  <option value="Superación e integración">Superación e integración</option>
+				  <option value="Derechos humanos">Derechos humanos</option>
+				  			  
+			</select>
+		</div>
+
+		<div class="conformder">
+		<br>
+		<br>
+		<br>
+		<br>
+			<label id="up" style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">Dirección del representante de grupo</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="text" name="direccion" required>
+			<br>
+			<br>
+
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">E-mail del representante de grupo</label>
+			<input style="width:100%; border-radius: 10px; border:none; height: 20px; padding-left: 10px;" type="email" name="correo" required>
+			<br>
+			<br>
+
+			
+			<label style="display: block; width: 100%; text-align: left; font-family: fuentegeoteconegrita; font-size: 12px; color:#ec2cab; margin-bottom: 5px;">¿por qué te consideras merecedor del Premio?</label>
+			<textarea style="width: 100%; height: 100px;  border:none; border-radius: 13px;" name="comentario" required>
+				
+			</textarea>
+			<br>
+			<input id="botonform1" type="submit" name="" value="ENVIAR">
+		</div>
+	</form>
+
+
+	</div>
+
+
+
+	
+	</div>
+
+
+<div class="footer">
+	<img src="img/Logo_Tampico.png">
+</div>
+
+
+
+</div>
+<div class="desarrollado_registro">
+	<p>Desarrollado por <a href="http://chocolatepublicidad.com/">chocolatepublicidad.com</a></p>
+</div>
+
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="js/custom.js"></script>
+</body>
+</html>
